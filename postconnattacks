@@ -1,0 +1,7 @@
+#discoveringconnectedclients 
+#netdiscover
+
+netdiscover -r ip/range
+
+#zenmap
+nmap -sv -T4 -o -F -version-light ip/range

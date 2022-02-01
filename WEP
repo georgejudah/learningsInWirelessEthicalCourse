@@ -1,0 +1,8 @@
+1. capture a large number of packets/ IVs using airodump-ng
+2. analyze the captured IVs and crack the key using crack-ng
+
+
+to analyze the captured IVs 
+aircrack-ng basic_wep-01.cap 
+
+KEY FOUND  with semi colon, remove the semi colons and that is the password, ASCII may not be present sometimes 

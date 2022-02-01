@@ -1,0 +1,7 @@
+sudo airodump-ng --bssid 3C:84:6A:8D:0F:3E --channel 11 --write test wlan0mon
+
+
+
+
+to sniff
+airodump-ng wlan0mon

